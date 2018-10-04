@@ -1,8 +1,10 @@
+<?php
 /*
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-<?php
+
+
 ini_set( 'error_reporting', E_ERROR );
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -225,7 +227,7 @@ email is for registration and never public. | emailは登録のみに必要で�
 
 
   //islogin
-  $lbpas = 'testkey7';
+  $lbpas = 'xxxxxxxxxx';
 if ( ( isset($_COOKIE["amachauser"]) && isset($_COOKIE["amachakey"]) ) || (isset($_REQUEST["amachauser"]) && isset($_REQUEST["amachakey"]) ) ) { //islogin1
   if ( $_COOKIE["amachakey"] == $lbpas  || $_REQUEST["amachakey"] == $lbpas ) { //islogin2
     echo '<div style="text-align: right;">Welcome ' . $amachauser . '/'  . substr(md5($amachaemail), 0, 5) . '' . '<br /></div>' . "\n";
